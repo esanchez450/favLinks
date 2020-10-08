@@ -30,14 +30,14 @@ const TableBody = props => {
 }
 
 const Table = props => {
-//    const { linkData, removeLink } = props;
+//    const { linkData, removeLinks } = props;
 
     // {/*TODO - return <table> component, TableHeader and TableBody  */}
 
     return (
         <table>
             <TableHeader />,
-            <TableBody linkData={[]}/>
+            <TableBody linkData={props.linkData}/>
         </table>
     )
 

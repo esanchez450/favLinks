@@ -17,13 +17,13 @@ class Form extends Component {
         /*
             TODO - Logic for changing state based on form changes
         */
-       console.log("input form updated")
-       console.log(event.target)
+        console.log("input form updated")
+        console.log(event.target)
 
        // change the state
-       this.setState({
-        [event.target.name]: event.target.value, 
-        [event.target.URL]:  event.target.value})
+        this.setState({
+            [event.target.name]: event.target.value, 
+            [event.target.URL]:  event.target.value})
     }
 
     onFormSubmit = (event) => {
@@ -34,7 +34,7 @@ class Form extends Component {
         /*
             TODO - Logic for calling props to handle submission and setting state changes
         */
-
+        this.props.onSubmit(this.state)
     }
 
     render() {
