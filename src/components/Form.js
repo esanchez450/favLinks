@@ -6,8 +6,11 @@ class Form extends Component {
         
         /*
             TODO - set initial state for link name and URL 
-
         */
+       this.state = {
+           name: props.name,
+           URL: props.URL
+       }
     }
 
     handleChange = event => {
@@ -25,6 +28,10 @@ class Form extends Component {
         */
 
     }
+
+    // const { linkData, removeLink } = props;
+
+
 
     render() {
 
