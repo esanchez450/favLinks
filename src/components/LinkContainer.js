@@ -30,12 +30,13 @@ class LinkContainer extends React.Component {
                 <h1>My Favorite Links</h1>
                 <p>Add a new url with a name and link to the table.</p>
                 {/*TODO - Add Table Component */}
-                <Table linkData={this.props.favLinks}/>
+                    <Table />
                 
                 <br/>
 
                 <h3>Add New</h3>
                 {/*TODO - Add Form Component */}
+                    <Form />
             </div>
         );
     }

@@ -13,9 +13,6 @@ const TableHeader = () => {
     );
 }
 
-// [r1: (git, 'github.com'), 
-// r2: (name:'google', URL:{'google.com'})]
-
 const TableBody = props => { 
     // boilerplate table body functional component 
     // we use Array.map to create table rows from LinkData passed via props
@@ -40,7 +37,7 @@ const Table = props => {
     return (
         <table>
             <TableHeader />,
-            <TableBody />
+            <TableBody linkData={[]}/>
         </table>
     )
 
