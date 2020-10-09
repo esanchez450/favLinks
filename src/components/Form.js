@@ -29,11 +29,11 @@ class Form extends Component {
     onFormSubmit = (event) => {
         // to prevent page reload on form submit
         event.preventDefault();
-        
-        console.log(this.state)
+
         /*
             TODO - Logic for calling props to handle submission and setting state changes
         */
+        console.log(this.state)
         this.props.onSubmit(this.state)
     }
 
